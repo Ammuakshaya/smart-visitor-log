@@ -23,8 +23,12 @@ A professional web-based Visitor Management System built using PHP and MySQL.
 4. Place project inside `htdocs`
 5. Run: `http://localhost/visitor_log/home.php`
 
-## 🔹 Screenshots
-(Add screenshots here)
+## 📸 Screenshots
 
-## 🔹 Author
-Akshaya
+### 🏠 Visitor Entry Page
+![Home Page](screenshots/home.png)
+
+### ✅ Entry Confirmation
+![Success Page](screenshots/success.png)
+
+
