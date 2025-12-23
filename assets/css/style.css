@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/* ===== BACKGROUND ===== */
+body {
+    background:
+        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+        url("../images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===== FORM CARD ===== */
+.form-container {
+    width: 460px;
+    background: rgba(0, 0, 0, 0.55);
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 25px 70px rgba(0,0,0,0.6);
+}
+
+/* ===== PAGE TITLE (FIXED VISIBILITY) ===== */
+.form-container h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: #00e5ff; /* bright cyan */
+    margin-bottom: 6px;
+}
+
+.form-container p {
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+    opacity: 0.9;
+    margin-bottom: 25px;
+}
+
+/* ===== LABELS (BRIGHT COLOR) ===== */
+label {
+    color: #ffeb3b; /* bright yellow */
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: block;
+    letter-spacing: 0.4px;
+}
+
+/* ===== INPUTS ===== */
+input, textarea {
+    width: 100%;
+    padding: 13px 14px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    margin-bottom: 18px;
+    background: #ffffff;
+    color: #333;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #777;
+}
+
+input:focus,
+textarea:focus {
+    box-shadow: 0 0 0 3px rgba(0,229,255,0.6);
+}
+
+/* ===== FILE INPUT ===== */
+input[type="file"] {
+    padding: 10px;
+    background: #ffffff;
+}
+
+/* ===== SUBMIT BUTTON ===== */
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #00e5ff, #2979ff);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 35px rgba(0,229,255,0.6);
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 520px) {
+    .form-container {
+        width: 92%;
+        padding: 25px;
+    }
+}
